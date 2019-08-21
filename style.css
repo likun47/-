@@ -1,0 +1,76 @@
+* {
+    margin:0;
+    padding:0
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "微软雅黑";
+    color:#14191e;
+}
+
+.main{
+    width: 1620px;
+    height: 1080px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    width: 1620px;
+    height: 1080px;
+    overflow: hidden;
+    position: relative; /*相对于自己以前的位置进行定位*/;
+}
+
+.banner-slide {
+    width: 1620px;
+    height: 1080px;
+    background-repeat: no-repeat; /*表示图片不重复 */;
+    position: absolute; /*子元素相对祖先元素(pistion属性值不能为static or 不设置值)进行定位 */
+    display: none;
+}
+
+.slide1{
+    background-image: url('./img/1.jpg')
+}
+
+.slide2{
+    background-image: url('./img/2.jpg')
+}
+
+.slide3{
+    background-image: url('./img/3.jpg')
+}
+
+.slide-active {
+    display: block;
+}
+
+.button {
+    position:absolute; 
+    width: 80px;
+    height:120px;
+    left: 244px;
+    top: 50%;
+    margin-top: -40px;
+    background:url('./img/4.png') no-repeat center center;
+}
+
+.button:hover{
+    background-color: #333;
+    filter:alpha(opacity=80);
+}
+
+.prev {
+    transform: rotate(180deg);
+}
+
+.next {
+    left:auto;
+    right:0;
+}
