@@ -72,5 +72,28 @@ body{
 
 .next {
     left:auto;
-    right:0;
+    right:80px;
+}
+
+.dots{
+    position: absolute;
+    right: 158px;
+    bottom:140px;
+    text-align:right;
+}
+
+.dots span {
+    display: inline-block;
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    background: rgba(7,17,27, 0.4);
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.8) inset;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.dots span.active{
+    box-shadow: 0 0 0 2px rgba(7,17,27,0.4);
+    background: white;
 }
