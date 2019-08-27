@@ -3,11 +3,12 @@
     <head>
         <meta charset = "UTF-8">
         <title>综合实例</title>
-        <link rel = "stylesheet" href="../rollimage/style.css">
+        <link rel = "stylesheet" href="./style.css">
     </head>
 
     <body>
         <div class="main" id="main">
+            <div class="menu-box"></div>
             <!--图片轮播-->
          <div class="banner" id="banner">
                 <a href="" class="">
@@ -21,10 +22,10 @@
                 </a>
             </div>
             <!--上一张, 下一张按钮-->
-            <a href="javascript:void(0)" class="button prev"></a>
-            <a href="javascript:void(0)" class="button next"></a>
+            <a href="javascript:void(0)" class="button prev" id='prev'></a>
+            <a href="javascript:void(0)" class="button next" id='next'></a>
             <!--圆点导航-->
-            <div class="dots">
+            <div class="dots" id='dots'>
                 <span class="active"></span>
                 <span class=""></span>
                 <span class=""></span>

@@ -97,3 +97,25 @@ body{
     box-shadow: 0 0 0 2px rgba(7,17,27,0.4);
     background: white;
 }
+
+/*导航菜单*/
+.menu-box{
+    width: 244px;
+    height: 460px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    background: rgba(7, 17, 27,0.5);
+    opacity: 0.5;
+    z-index: 1 /*优先级权重 */
+}
+
+.menu-content{
+    width: 244px;
+    height: 454px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    padding-top:6px;
+}
